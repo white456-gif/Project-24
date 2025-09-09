@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>penster</title>
+    <link rel="stylesheet"href="style.css">
+  </head>
+  <body>
+  <h1>penster</h1>
+  <div id="navbar">
+       <div class="outer">
+         <div class="inner">
+  <a href="/index.htmL">Account</a>
+  <a href="/index.hTml">my cart</a>
+  <a href="/index.hTml">home</a>
+  <a href="/index.Html">about us</a>
+  <iframe width="965" height="500" 
+          src="/kk.mp4"
+          frameborder="0" allowfullscreen>
+  </iframe>
+  <input type="checkbox" name="Faizan" id="Faizan">box
+  <input type="file" name="kk" id="101">x11
+  <input type="button" value="hero">
+  <i>heroine</i>
+  <br>
+  <pre>from transformers import AutoModelForCausalLM, AutoTokenizer
+import tkinter as tk
+
+# Load AI model and tokenizer
+model_name = 'gpt2'
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name)
+
+# Function to chat with Xenon
+def chat_with_xenon():
+    user_input = entry.get()
+    if user_input.lower() == "exit":
+        root.destroy()
+    else:
+        inputs = tokenizer.encode(user_input, return_tensors='pt')
+        outputs = model.generate(inputs, max_length=100, num_return_sequences=1)
+        response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        chatbox.insert(tk.END, f"You: {user_input}\n")
+        chatbox.insert(tk.END, f"Xenon: {response}\n\n")
+        entry.delete(0, tk.END)
+
+# GUI Setup
+root = tk.Tk()
+root.title("Xenon Chatbox")
+
+chatbox = tk.Text(root, height=20, width=50)
+chatbox.pack(pady=10)
+
+entry = tk.Entry(root, width=50)
+entry.pack(pady=5)
+
+send_button = tk.Button(root, text="Send", command=chat_with_xenon)
+send_button.pack(pady=5)
+
+root.mainloop()</pre>
+<div2></div2>
+<script src="script.js"></script>
+  </body>
+</html>
